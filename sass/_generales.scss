@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2? family= Raleway:wght@200 & display=swap');
+*{
+margin: 0;
+padding: 0;  
+font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: rgba(0,128,74,1);
+}
+/* first movile */
+.headerContainer{
+    display: flex;    
+    font-family: 'Raleway', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    background:  linear-gradient(90deg, #001b0c 0%, rgba(0,128,74,1) 100%);
+    text-align: center;
+    .nombre{
+        font-size: 25px;
+        color: #478f4a;
+    }
+    .slogan{
+        font-size: 15px;
+        color: #478f4a;
+    }
+    .logo{
+        width: 160px;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+}
+.gold{
+    background-color: #ff8a00;
+}
+.footerConteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:  linear-gradient(90deg, rgba(0,27,12,1) 0%, rgba(0,128,74,1) 100%);
+    color: #63c166;
+    padding-top: 10px;
+
+    img{
+    width: 20px;
+    }
+    .redes{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 0px;
+    margin-bottom: 10px;
+    }
+    .contacto{
+    justify-content: center;
+    width: 100%;
+    padding-left: 25px;
+    
+        p{
+        margin-bottom: 0px;
+        }
+    }
+    .iconoContacto{
+    justify-content: space-between;
+    font-size: 14px;
+    }
+}
+@media(min-width:426px){
+    .headerContainer{
+        padding-left: 125px;
+        .nombre{
+            font-size: 42px;
+        }
+        .slogan{
+            font-size: 22px;
+        }
+    }
+    .footerConteiner{
+        img{
+        width: 30px;
+        .contacto{
+            width: 100%;
+            padding-left: 25px;
+            
+            }
+            .copyrigth{
+                width: 100%;
+                text-align: end;
+                padding-right: 30px;
+            }
+    }
+}
+}
+@media(min-width:1023px){
+    .headerContainer{
+        padding-left: 255px;
+        .nombre{
+            font-size: 48px;
+        }
+        .slogan{
+            font-size: 28px;
+        }
+    }
+    .footerConteiner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0,27,12,1) 0%, rgba(0,128,74,1) 100%);
+        align-content: space-between;
+        
+        .redes{
+        flex-direction: column;
+        width: 10%;
+        order: 2;
+        }
+        .contacto{
+        order: 1;
+        width: 65%;
+        padding-left: 25px;
+        }
+        .copyrigth{
+        order: 3;
+        width: 55%;
+        text-align: end;
+        padding-right: 20px;
+    }
+}
+}

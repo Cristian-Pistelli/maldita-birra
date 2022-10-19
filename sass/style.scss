@@ -1,0 +1,305 @@
+@import "generales";
+
+/* first movile */
+
+/* css general*/
+
+/* css index */
+
+.containerIndex{
+    display: flex;
+    flex-direction: column;
+    color: #001b0c;
+    text-align: justify;
+    font-weight: bolder;
+    margin: 30px;
+}
+.grifo img{
+    width: 100%;
+}
+
+/* css equipamiento */
+.equipamiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: #001b0c;
+    
+}
+.equipamiento img{
+    width: 350px;
+}
+.equipamiento section{
+    margin: 20px;
+    border: #ff8a00 solid;
+    background-color: #478f4a;
+}
+/* css historia */
+.historia p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.historia img{
+    width: 400px;
+    
+}
+.historia{
+    display:flex;
+    flex-direction: column;
+        align-items: center;
+    justify-items: center;
+    text-align: justify;
+    margin: 10px;
+}
+
+.h11{
+    width: 420px;
+    text-align: center;
+    background: rgb(0,128,74);
+    background: linear-gradient(90deg, rgba(0,128,74,0.01) 0%, rgba(130,231,121,1) 50%, rgba(0,128,74,1) 100%);
+}
+.tutorial{
+    width: 100%;
+    padding: 10px;
+}
+
+.tutorial h1{
+    font-size: 24px;
+    
+    text-align: center;
+}
+.tutorial h2{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.youtube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}
+.proceso{
+        display: flex;
+        justify-content: center;
+    img{
+        width: 70%;
+    }
+}
+.estilos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px;
+    row-gap: 10px;
+
+        img{
+            width: 100%;
+        }
+        h5{
+            font-weight: bolder;
+            color: green;
+        }
+}
+
+@media(min-width:426px){
+
+    .parrafoIndex{
+    border: #ff8a00 solid;
+    padding: 15px;
+    margin-bottom: 5px;
+    }
+    .grifo{
+        width: 708px;
+        border: #ff8a00 solid;
+    }
+    .historia{
+        margin: 5px 30px;
+        border: #ff8a00 solid;
+        padding: 20px;
+    }
+    .equipamiento{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "equipamiento1 equipamiento2"
+        "equipamiento3 equipamiento4"
+        "equipamiento5 equipamiento6";
+        justify-content: center;
+    }
+    .equipamiento img{
+        width: 300px;
+        height: 300px;
+    }
+    .estilos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+            img{
+                width: 286px;
+            }
+        }
+}
+
+
+@media(min-width:1023px){
+    
+    .h1{
+        grid-area: h1;
+    }
+    .h2{
+        grid-area: h2;;
+    }
+    .h3{
+        grid-area: h3;
+    }
+    .h4{
+        grid-area: h4;
+    }
+    .h5{
+        grid-area: h5;
+    }
+    .h6{
+        grid-area: h6;
+    }
+    .h7{
+        grid-area: h7;
+    }
+    .h8{
+        grid-area: h8;
+    }
+    .h9{
+        grid-area: h9;
+    }
+    
+    .historia{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "h1 h1"
+        "h2 h3"
+        "h5 h4"
+        "h6 h7"
+        "h9 h8";
+        
+    }
+    .historiaImg:hover{
+        animation: animation 4s;
+    }
+    @keyframes animation{
+        0%{
+            transform: scale(1.5);
+        }
+        25%{
+            border-radius: 25%;
+        }
+        50%{
+            border-radius: 50%;
+        }
+        75%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
+    .equipamiento1{
+        grid-area: equipamiento1;
+    }
+    .equipamiento2{
+        grid-area: equipamiento2;
+    }
+    .equipamiento3{
+        grid-area: equipamiento3;
+    }
+    .equipamiento4{
+        grid-area: equipamiento4;
+    }
+    .equipamiento5{
+        grid-area: equipamiento5;
+    }
+    .equipamiento6{
+        grid-area: equipamiento6;
+    }
+    
+    .equipamiento{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "equipamiento1 equipamiento2 equipamiento3"
+        "equipamiento4 equipamiento5 equipamiento6";
+        justify-content: center;
+    }
+    .equipamiento1:hover{
+    transform: scale(1.5) translate(100px);
+    transition-property: all;
+    transition-duration: 1.5s;
+    }
+    .equipamiento2:hover{
+    transform: scale(1.5);
+    transition-property: all;
+    transition-duration: 1.5s;
+    }
+    .equipamiento3:hover{
+    transform: scale(1.5) translate(-100px);
+    transition-property: all;
+    transition-duration: 1.5s;
+    }
+    .equipamiento4:hover{
+    transform: scale(1.5) translate(100px);
+    transition-property: all;
+    transition-duration: 1.5s;
+    }
+    .equipamiento5:hover{
+    transform: scale(1.5);
+    transition-property: all;
+    transition-duration: 1.5s;
+    }
+    .equipamiento6:hover{
+    transform: scale(1.5) translate(-100px);
+    transition-property: all;
+    transition-duration: 1.5s;
+    }
+
+    .containerIndex{
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .parrafoIndex{
+        border: none;
+        width: 50%;
+        font-size: 15px;
+    }
+    .grifo{
+        border: none;
+        width: 50%;
+    }
+    main{
+        background: rgb(255,111,0);
+        background: radial-gradient(circle, rgba(255,111,0,1) 0%, rgba(232,233,12,1) 50%, rgba(0,128,74,1) 100%);;
+    }
+    .estilos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        .estilos img{
+                    width: 287px;
+    }
+}
+}   
