@@ -68,6 +68,12 @@ body {
   justify-content: space-between;
   font-size: 14px;
 }
+.footerConteiner .copyrigth {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 25px;
+}
 
 @media (min-width: 426px) {
   .headerContainer {
@@ -125,6 +131,8 @@ body {
     width: 55%;
     text-align: end;
     padding-right: 20px;
+    display: flex;
+    justify-content: space-around;
   }
 }
 /* first movile */
@@ -274,6 +282,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+  .estilos .card {
+    width: 80px;
   }
   .estilos img {
     width: 286px;
