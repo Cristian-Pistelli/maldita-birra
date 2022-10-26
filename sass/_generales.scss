@@ -114,6 +114,11 @@ body{
         .slogan{
             font-size: 28px;
         }
+        .logo{
+            width: 200px;
+            display: flex;
+            align-items: flex-end;
+        }
     }
     .footerConteiner{
         display: flex;
@@ -140,6 +145,6 @@ body{
         text-align: end;
         display: flex;
         justify-content: space-evenly;
+        }
     }
-}
 }

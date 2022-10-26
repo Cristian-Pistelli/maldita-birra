@@ -1,11 +1,5 @@
 @import "generales";
 
-/* first movile */
-
-/* css general*/
-
-/* css index */
-
 .containerIndex{
     display: flex;
     flex-direction: column;
@@ -18,7 +12,6 @@
     width: 100%;
 }
 
-/* css equipamiento */
 .equipamiento{
     display: flex;
     flex-direction: column;
@@ -37,15 +30,7 @@
     border: #ff8a00 solid;
     background-color: #478f4a;
 }
-/* css historia */
-.historia p{
-    font-size: 15px;
-    font-weight: bold;
-}
-.historia img{
-    width: 400px;
-    
-}
+
 .historia{
     display:flex;
     flex-direction: column;
@@ -53,8 +38,14 @@
     justify-items: center;
     text-align: justify;
     margin: 10px;
+    p{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    img{
+        width: 400px;
+    }
 }
-
 .h11{
     width: 420px;
     text-align: center;
@@ -64,18 +55,15 @@
 .tutorial{
     width: 100%;
     padding: 10px;
+        h1{
+            font-size: 24px;
+            text-align: center;
+        }
+        h2{
+            font-size: 16px;
+            text-align: justify;
+        }
 }
-
-.tutorial h1{
-    font-size: 24px;
-    
-    text-align: center;
-}
-.tutorial h2{
-    font-size: 16px;
-    text-align: justify;
-}
-
 .youtube{
     display: flex;
     align-items: center;
@@ -299,7 +287,7 @@
     }
     .estilos{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 10px;
         .estilos img{
                     width: 287px;

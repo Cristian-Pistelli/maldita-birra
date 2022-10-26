@@ -113,6 +113,11 @@ body {
   .headerContainer .slogan {
     font-size: 28px;
   }
+  .headerContainer .logo {
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+  }
   .footerConteiner {
     display: flex;
     flex-direction: row;
@@ -140,9 +145,6 @@ body {
     justify-content: space-evenly;
   }
 }
-/* first movile */
-/* css general*/
-/* css index */
 .containerIndex {
   display: flex;
   flex-direction: column;
@@ -156,7 +158,6 @@ body {
   width: 100%;
 }
 
-/* css equipamiento */
 .equipamiento {
   display: flex;
   flex-direction: column;
@@ -177,16 +178,6 @@ body {
   background-color: #478f4a;
 }
 
-/* css historia */
-.historia p {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.historia img {
-  width: 400px;
-}
-
 .historia {
   display: flex;
   flex-direction: column;
@@ -194,6 +185,13 @@ body {
   justify-items: center;
   text-align: justify;
   margin: 10px;
+}
+.historia p {
+  font-size: 15px;
+  font-weight: bold;
+}
+.historia img {
+  width: 400px;
 }
 
 .h11 {
@@ -207,12 +205,10 @@ body {
   width: 100%;
   padding: 10px;
 }
-
 .tutorial h1 {
   font-size: 24px;
   text-align: center;
 }
-
 .tutorial h2 {
   font-size: 16px;
   text-align: justify;
@@ -439,7 +435,7 @@ body {
   }
   .estilos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
   .estilos .estilos img {
