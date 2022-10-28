@@ -50,7 +50,7 @@
     width: 420px;
     text-align: center;
     background: rgb(0,128,74);
-    background: linear-gradient(90deg, rgba(0,128,74,0.01) 0%, rgba(130,231,121,1) 50%, rgba(0,128,74,1) 100%);
+    background: linear-gradient(90deg, rgba(0,128,74,0.01) 0%, rgba(130,231,121,1) 0%, rgba(0,128,74,1) 50%, rgba(130,231,121,1) 100%)
 }
 .tutorial{
     width: 100%;
@@ -207,6 +207,10 @@
         100%{
             transform: rotate(360deg);
         }
+    }
+    .h11{
+        background: rgb(232,233,12);
+        background: linear-gradient(90deg, rgba(232,233,12,0.01) 0%, rgba(0,128,74,1) 50%, rgba(232,233,12,1) 100%);
         
     }
     .equipamiento1{
@@ -283,7 +287,7 @@
     }
     main{
         background: rgb(255,111,0);
-        background: radial-gradient(circle, rgba(255,111,0,1) 0%, rgba(232,233,12,1) 50%, rgba(0,128,74,1) 100%);;
+        background: radial-gradient(circle, rgba(255,111,0,1) 0%, rgba(232,233,12,1) 50%, rgba(0,128,74,1) 100%);
     }
     .estilos{
             display: grid;

@@ -202,7 +202,7 @@ body {
   width: 420px;
   text-align: center;
   background: rgb(0, 128, 74);
-  background: linear-gradient(90deg, rgba(0, 128, 74, 0.01) 0%, rgb(130, 231, 121) 50%, rgb(0, 128, 74) 100%);
+  background: linear-gradient(90deg, rgba(0, 128, 74, 0.01) 0%, rgb(130, 231, 121) 0%, rgb(0, 128, 74) 50%, rgb(130, 231, 121) 100%);
 }
 
 .tutorial {
@@ -365,6 +365,10 @@ body {
     100% {
       transform: rotate(360deg);
     }
+  }
+  .h11 {
+    background: rgb(232, 233, 12);
+    background: linear-gradient(90deg, rgba(232, 233, 12, 0.01) 0%, rgb(0, 128, 74) 50%, rgb(232, 233, 12) 100%);
   }
   .equipamiento1 {
     grid-area: equipamiento1;
