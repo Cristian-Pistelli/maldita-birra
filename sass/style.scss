@@ -1,5 +1,7 @@
 @import "generales";
 
+$border:#ff8a00 solid;
+
 .containerIndex{
     display: flex;
     flex-direction: column;
@@ -27,14 +29,14 @@
 }
 .equipamiento section{
     margin: 20px;
-    border: #ff8a00 solid;
+    border: $border;
     background-color: #478f4a;
 }
 
 .historia{
     display:flex;
     flex-direction: column;
-        align-items: center;
+    align-items: center;
     justify-items: center;
     text-align: justify;
     margin: 10px;
@@ -107,13 +109,13 @@
 @media(min-width:767px){
 
     .parrafoIndex{
-    border: #ff8a00 solid;
+    border: $border;
     padding: 15px;
     margin-bottom: 5px;
     }
     .grifo{
         width: 708px;
-        border: #ff8a00 solid;
+        border: $border;
     }
     .historia{
         margin: 5px 30px;
@@ -295,6 +297,6 @@
             gap: 10px;
         .estilos img{
                     width: 287px;
+        }
     }
-}
 }   

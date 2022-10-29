@@ -21,11 +21,11 @@ body {
 }
 .headerContainer .nombre {
   font-size: 25px;
-  color: #478f4a;
+  color: #63c166;
 }
 .headerContainer .slogan {
   font-size: 15px;
-  color: #478f4a;
+  color: #63c166;
 }
 .headerContainer .logo {
   width: 160px;
@@ -35,6 +35,11 @@ body {
 
 .container-fluid {
   font-weight: bold;
+}
+
+#resaltar {
+  font-weight: bolder;
+  color: #63c166;
 }
 
 .gold {
@@ -79,6 +84,8 @@ body {
   display: flex;
   justify-content: end;
   padding-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 767px) {
@@ -138,7 +145,7 @@ body {
   }
   .footerConteiner .contacto {
     order: 1;
-    width: 65%;
+    width: 55%;
     padding-left: 25px;
   }
   .footerConteiner .copyrigth {
