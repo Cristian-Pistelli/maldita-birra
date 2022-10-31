@@ -1,6 +1,6 @@
 @import "generales";
 
-$border:#ff8a00 solid;
+$border: #ff8a00 solid;
 
 .containerIndex{
     display: flex;
@@ -10,10 +10,12 @@ $border:#ff8a00 solid;
     font-weight: bolder;
     margin: 30px;
 }
-.grifo img{
+.grifo{
+    img{
     width: 100%;
+    border-radius: 0.25rem;
+    }
 }
-
 .equipamiento{
     display: flex;
     flex-direction: column;
@@ -25,11 +27,12 @@ $border:#ff8a00 solid;
     
 }
 .equipamiento img{
-    width: 350px;
+    width: 315px;
 }
 .equipamiento section{
     margin: 20px;
     border: $border;
+    border-radius: 0.25rem;
     background-color: #478f4a;
 }
 
@@ -45,11 +48,12 @@ $border:#ff8a00 solid;
         font-weight: bold;
     }
     img{
-        width: 400px;
+        width: 320px;
+        border-radius: 0.25rem;
     }
 }
 .h11{
-    width: 420px;
+    width: 320px;
     text-align: center;
     background: rgb(0,128,74);
     background: linear-gradient(90deg, rgba(0,128,74,0.01) 0%, rgba(130,231,121,1) 0%, rgba(0,128,74,1) 50%, rgba(130,231,121,1) 100%)
@@ -83,7 +87,8 @@ $border:#ff8a00 solid;
         display: flex;
         justify-content: center;
     img{
-        width: 70%;
+        width: 100%;
+        border-radius: 0.25rem;
     }
 }
 @mixin mixin ($font, $color) {
@@ -113,17 +118,22 @@ $border:#ff8a00 solid;
 
     .parrafoIndex{
     border: $border;
+    border-radius: 00.25rem;
     padding: 15px;
     margin-bottom: 5px;
     }
     .grifo{
         width: 708px;
         border: $border;
+        border-radius: 0.25rem;
     }
     .historia{
         margin: 5px 30px;
         border: #ff8a00 solid;
         padding: 20px;
+        .h11{
+            width: 420px;
+        }
     }
     .equipamiento{
         display: grid;
@@ -289,6 +299,9 @@ $border:#ff8a00 solid;
     .grifo{
         border: none;
         width: 50%;
+        img{
+            border-radius: 0.25rem;
+        }
     }
     main{
         background: rgb(255,111,0);

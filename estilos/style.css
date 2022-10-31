@@ -179,6 +179,7 @@ body {
 
 .grifo img {
   width: 100%;
+  border-radius: 0.25rem;
 }
 
 .equipamiento {
@@ -192,12 +193,13 @@ body {
 }
 
 .equipamiento img {
-  width: 350px;
+  width: 315px;
 }
 
 .equipamiento section {
   margin: 20px;
   border: #ff8a00 solid;
+  border-radius: 0.25rem;
   background-color: #478f4a;
 }
 
@@ -214,11 +216,12 @@ body {
   font-weight: bold;
 }
 .historia img {
-  width: 400px;
+  width: 320px;
+  border-radius: 0.25rem;
 }
 
 .h11 {
-  width: 420px;
+  width: 320px;
   text-align: center;
   background: rgb(0, 128, 74);
   background: linear-gradient(90deg, rgba(0, 128, 74, 0.01) 0%, rgb(130, 231, 121) 0%, rgb(0, 128, 74) 50%, rgb(130, 231, 121) 100%);
@@ -255,7 +258,8 @@ body {
   justify-content: center;
 }
 .proceso img {
-  width: 70%;
+  width: 100%;
+  border-radius: 0.25rem;
 }
 
 .estilos {
@@ -280,17 +284,22 @@ body {
 @media (min-width: 767px) {
   .parrafoIndex {
     border: #ff8a00 solid;
+    border-radius: 0.25rem;
     padding: 15px;
     margin-bottom: 5px;
   }
   .grifo {
     width: 708px;
     border: #ff8a00 solid;
+    border-radius: 0.25rem;
   }
   .historia {
     margin: 5px 30px;
     border: #ff8a00 solid;
     padding: 20px;
+  }
+  .historia .h11 {
+    width: 420px;
   }
   .equipamiento {
     display: grid;
@@ -455,6 +464,9 @@ body {
   .grifo {
     border: none;
     width: 50%;
+  }
+  .grifo img {
+    border-radius: 0.25rem;
   }
   main {
     background: rgb(255, 111, 0);
