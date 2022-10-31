@@ -15,17 +15,17 @@ body {
   font-family: "Raleway", sans-serif;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
+  padding-left: 10px;
   background: linear-gradient(90deg, #001b0c 0%, rgb(0, 128, 74) 100%);
   text-align: center;
 }
 .headerContainer .nombre {
   font-size: 25px;
-  color: #63c166;
+  color: #428044;
 }
 .headerContainer .slogan {
   font-size: 15px;
-  color: #63c166;
+  color: #428044;
 }
 .headerContainer .logo {
   width: 160px;
@@ -39,7 +39,7 @@ body {
 
 #resaltar {
   font-weight: bolder;
-  color: #63c166;
+  color: #428044;
 }
 
 .gold {
@@ -76,18 +76,30 @@ body {
 .footerConteiner .iconoContacto {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 10px;
   padding-right: 15px;
 }
 .footerConteiner .copyrigth {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: space-evenly;
   padding-right: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 12px;
 }
 
+@media (min-width: 376px) {
+  .headerContainer {
+    padding-left: 40px;
+  }
+  .footerConteiner .iconoContacto {
+    font-size: 14px;
+  }
+  .footerConteiner .copyrigth {
+    font-size: 14px;
+  }
+}
 @media (min-width: 767px) {
   .headerContainer {
     padding-left: 125px;

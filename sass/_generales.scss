@@ -7,14 +7,14 @@ font-family: 'Raleway', sans-serif;
 body{
     background-color: rgba(0,128,74,1);
 }
-$fontColor:#63c166;
+$fontColor:#428044;
 /* first movile */
 .headerContainer{
     display: flex;    
     font-family: 'Raleway', sans-serif;
     justify-content: space-between;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 10px;
     background:  linear-gradient(90deg, #001b0c 0%, rgba(0,128,74,1) 100%);
     text-align: center;
     .nombre{
@@ -73,16 +73,30 @@ $fontColor:#63c166;
     .iconoContacto{
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 10px;
     padding-right: 15px;
     }
     .copyrigth{
         width: 100%;
         display: flex;
-        justify-content: end;
+        justify-content: space-evenly;
         padding-right: 15px;
         margin-top: 10px;
         margin-bottom: 10px;
+        font-size: 12px;
+    }
+}
+@media(min-width:376px){
+    .headerContainer{
+        padding-left: 40px;
+    }
+    .footerConteiner{
+        .iconoContacto{
+            font-size: 14px;
+        }
+        .copyrigth{
+            font-size: 14px;
+        }
     }
 }
 @media(min-width:767px){

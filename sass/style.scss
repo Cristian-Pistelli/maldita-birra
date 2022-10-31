@@ -86,6 +86,10 @@ $border:#ff8a00 solid;
         width: 70%;
     }
 }
+@mixin mixin ($font, $color) {
+    font-weight: $font;
+    color: $color;
+}
 .estilos{
     display: flex;
     flex-direction: column;
@@ -101,8 +105,7 @@ $border:#ff8a00 solid;
             width: 100%;
         }
         h5{
-            font-weight: bolder;
-            color: green;
+            @include mixin (bolder, green)
         }
 }
 
